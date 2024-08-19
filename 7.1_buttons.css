@@ -1,0 +1,20 @@
+body {background-color: bisque;}
+
+.flat {background-color: rgb(52, 207, 150); border: none;cursor: pointer;padding: 12px 6px;}
+.round {background-color: rgb(102, 102, 172); border: none;border-radius: 20px;cursor: pointer;font-size: large;padding: 12px 6px;}
+.flatGhost {border: 1px solid rgb(224, 18, 18); background-color: transparent ;padding: 15px 7px;cursor: pointer;}
+.roundGhost {
+    background-color: transparent;border: 1px solid burlywood;border-radius: 50px;width: 100px;height: 60px;cursor: pointer;
+}
+.flat:hover {
+    background-color: rgb(41, 167, 120);
+}
+.round:hover {
+    background-color: rgb(65, 65, 158);
+}
+.flatGhost:hover {
+    background-color: rgb(224, 18, 18);
+}
+.roundGhost:hover {
+    background-color: burlywood;
+}
