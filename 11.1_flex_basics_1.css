@@ -1,0 +1,41 @@
+.dM {
+    display: flex;
+    background-color: beige;
+    height: 600px;
+}
+.d1 { 
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+    .d2 {
+        width: 200px;
+        height: 200px;
+        background-color: red   ;
+    }
+    .d3 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+    .dM1 {
+        display: flex;
+        background-color: rgb(40, 68, 47);
+        height: 600px;
+        justify-content: space-between;
+    }
+    .d11 { 
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+        .d22 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(23, 233, 20)   ;
+        }
+        .d33 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(181, 30, 191);
+        }
