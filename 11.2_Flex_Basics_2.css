@@ -1,0 +1,23 @@
+.dM {
+    display: flex;
+    background-color: beige;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.d1 { 
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+    .d2 {
+        width: 200px;
+        height: 200px;
+        background-color: red   ;
+    }
+    .d3 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+    
