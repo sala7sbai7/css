@@ -1,0 +1,18 @@
+
+
+.box {
+    margin: auto;
+    position: relative;
+    right: 50px;
+    width: 200px;
+    height: 150px;
+    background-color: #171a17;   
+}
+
+.box::before {
+    content:"";
+position: absolute;
+width: 50%;
+height: 100%;
+background-color: aqua;
+}
