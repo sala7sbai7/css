@@ -1,0 +1,5 @@
+.a::after {
+    content: " (" attr(href) ")";
+    color: rgb(19, 47, 207); /* Optional: Styling for the href value */
+}
+
