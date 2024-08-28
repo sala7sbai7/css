@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #333;
+    animation: spin 1s linear infinite;
+}
+
+.spinner1 {
+    border-top-color: #ff3e00;
+}
+
+.spinner2 {
+    border-top-color: #007BFF;
+    border-bottom-color: #007BFF;
+    animation-duration: 1.5s;
+}
+
+.spinner3 {
+    border-top-color: #28a745;
+    border-right-color: #28a745;
+    animation-duration: 2s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-dots,
+.spinner-dots-background {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot,
+.bg-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot {
+    background-color: #333;
+    animation: dot-blink 1.2s infinite ease-in-out both;
+}
+
+.dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes dot-blink {
+    0%, 80%, 100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+.bg-dot {
+    background-color: #007BFF;
+    opacity: 0;
+    animation: bg-dot-light 2s infinite ease-in-out both;
+}
+
+.bg-dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.bg-dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.bg-dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes bg-dot-light {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
