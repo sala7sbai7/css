@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button 1: Color change from side to side */
+.btn1 {
+    background: linear-gradient(to right, #ff3e00 50%, #333 50%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+}
+
+.btn1:hover {
+    background-position: -100% 0%;
+}
+
+/* Button 2: Color change from top to bottom */
+.btn2 {
+    background: linear-gradient(to bottom, #007BFF 50%, #333 50%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+}
+
+.btn2:hover {
+    background-position: 0% -100%;
+}
+/* Button 3: Skew transition effect with a triangle sliding from top left */
+.btn3 {
+    background-color: #28a745; /* Initial color (green) */
+    position: relative;
+    overflow: hidden;
+    color: white; /* Initial text color */
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+.btn3::before {
+    content: '';
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    width: 200%;
+    height: 200%;
+    background: #333;
+    transform: skewX(-45deg); /* Skew to create a triangular effect */
+    transform-origin: top left;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; /* Ensure the pseudo-element is below the text */
+}
+
+.btn3:hover::before {
+    transform: translate(100%, 100%) skewX(-45deg); /* Move the triangle across the button */
+}
+
+.btn3:hover {
+    background-color: #333; /* Change the button's background color to black */
+    color: white; /* Ensure the text color remains white for visibility */
+}
+/* Button 4: Skew effect inside the button */
+.btn4 {
+    background-color: #ff5722;
+    transform: skew(0deg);
+}
+
+.btn4:hover {
+    transform: skew(-15deg);
+}
+
+/* Button 5: Scaling effect inside the button */
+.btn5 {
+    background-color: #6200ea;
+    transform: scale(1);
+}
+
+.btn5:hover {
+    transform: scale(1.2);
+}
